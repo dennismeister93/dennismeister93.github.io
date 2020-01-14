@@ -1,0 +1,31 @@
+#navbar {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 15px 10px; /* Large padding which will shrink on scroll (using JS) */
+    transition: 1s;
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0; /* At the top */
+    z-index: 99;
+  }
+
+  svg {
+    width: 300px;
+    height: 300px;
+    margin-left: 50%;
+    display: block;
+    transform: translate(-50%, 0%);
+    transition: 1s;
+    fill: #818C9F;
+  }
+
+  svg:hover {
+    fill: #525864;
+  }
+
+  /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+  @media screen and (max-width: 580px) {
+    #navbar {
+      padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+    }
+  }
