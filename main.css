@@ -1,11 +1,42 @@
+  .grid {
+    display: grid;
+    grid-template-columns: 300px auto 300px;
+    grid-gap: 1em;
+  }
+
+  header, footer {
+    grid-column: 1 / 6;
+  }
+
+  aside, article {
+    grid-column: span 1;
+  }
+  @media all and (max-width: 700px) {
+    aside,
+    article {
+      grid-column: 1 / 4;
+    }
+  }
+
+  header,
+  aside,
+  article,
+  footer {
+    background: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+  }
+
 #navbar {
     overflow: hidden;
     background-color: hsl(0, 100%, 100%);
-    padding: 15px 10px; /* Large padding which will shrink on scroll (using JS) */
+    padding: 15px 10px;
     transition: 1s;
-    position: fixed; /* Sticky/fixed navbar */
+    position: sticky;
     width: 100%;
-    top: 0; /* At the top */
+    top: 0;
     z-index: 99;
   }
 
