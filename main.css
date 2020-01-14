@@ -1,6 +1,6 @@
 #navbar {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: hsl(0, 100%, 100%);
     padding: 15px 10px; /* Large padding which will shrink on scroll (using JS) */
     transition: 1s;
     position: fixed; /* Sticky/fixed navbar */
