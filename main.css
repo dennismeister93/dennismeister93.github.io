@@ -1,32 +1,52 @@
   .grid {
     display: grid;
-    grid-template-columns: 300px auto 300px;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-gap: 1em;
+    /* grid-auto-rows: 100px; */
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+    "sideleft header header header sideright"
+    "sideleft section1 section2 section3 sideright"
+    "sideleft footer footer footer sideright";
   }
 
-  header, footer {
-    grid-column: 1 / 6;
+  header {
+    grid-area: header;
+  }
+  section:nth-of-type(1) {
+    grid-area: section1;
+  }
+  section:nth-of-type(2) {
+    grid-area: section2;
+  }
+  section:nth-of-type(3) {
+    grid-area: section3;
+  }
+  footer {
+    grid-area: footer;
+  }
+  aside:nth-of-type(1){
+    grid-area: sideleft;
+    background-color: grey;
+    justify-self: stretch;
+  }
+  aside:nth-of-type(2){
+    grid-area: sideright;
+    background-color: grey;
   }
 
-  aside, article {
-    grid-column: span 1;
-  }
   @media all and (max-width: 700px) {
-    aside,
-    article {
-      grid-column: 1 / 4;
-    }
+    
   }
 
   header,
-  aside,
-  article,
+  section,
   footer {
     background: #eaeaea;
-    display: flex;
     align-items: center;
     justify-content: center;
-    height: 25vh;
   }
 
 #navbar {
@@ -44,7 +64,7 @@
     width: 300px;
     height: 300px;
     margin-left: 50%;
-    display: block;
+    /* display: block; */
     transform: translate(-50%, 0%);
     transition: 1s;
     fill: #818C9F;
