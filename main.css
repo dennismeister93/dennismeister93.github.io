@@ -1,44 +1,54 @@
   .grid {
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
     grid-gap: 1em;
-    /* grid-auto-rows: 100px; */
     grid-auto-rows: minmax(100px, auto);
+
     grid-template-areas:
-    "sideleft header header header sideright"
-    "sideleft section1 section2 section3 sideright"
-    "sideleft footer footer footer sideright";
+    "header"
+    "content"
+    "footer";
   }
 
+	@media only screen and (min-width: 600px)   {
+		.grid {
+      margin: 100px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-gap: 1em;
+      grid-auto-rows: minmax(100px, auto);
+      grid-template-areas:
+      "header header header header"
+      "content content content content"
+      "content content content content"
+      "content content content content"
+      "footer footer footer footer";
+    }
+    content {
+      grid-area: content;
+      display: grid;
+      grid-gap: 1em;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+    }
+	}
+  
   header {
     grid-area: header;
   }
-  section:nth-of-type(1) {
-    grid-area: section1;
-  }
-  section:nth-of-type(2) {
-    grid-area: section2;
-  }
-  section:nth-of-type(3) {
-    grid-area: section3;
-  }
-  footer {
-    grid-area: footer;
-  }
-  aside:nth-of-type(1){
-    grid-area: sideleft;
-    background-color: grey;
-    justify-self: stretch;
-  }
-  aside:nth-of-type(2){
-    grid-area: sideright;
-    background-color: grey;
+
+  content {
+    grid-area: content;
+    display: grid;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+
+    /* grid-template-columns: subgrid; */
+    /* grid-template-rows: subgrid; */
   }
 
-  @media all and (max-width: 700px) {
-    
+  footer {
+    grid-area: footer;
   }
 
   header,
@@ -47,6 +57,10 @@
     background: #eaeaea;
     align-items: center;
     justify-content: center;
+  }
+
+  content {
+    background: lightblue;
   }
 
 #navbar {
@@ -64,7 +78,6 @@
     width: 300px;
     height: 300px;
     margin-left: 50%;
-    /* display: block; */
     transform: translate(-50%, 0%);
     transition: 1s;
     fill: #818C9F;
