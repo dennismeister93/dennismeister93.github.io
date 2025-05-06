@@ -16,7 +16,7 @@
   role="button"
   tabindex="0"
   aria-expanded={showTasks}
-  class="card preset-filled-surface-100-900 border-[1px] border-surface-200-800 card-hover divide-surface-200-800 block min-w-screen sm:min-w-[42rem] max-w-md sm:max-w-2xl divide-y overflow-hidden cursor-pointer"
+  class="card preset-filled-surface-100-900 border-[1px] border-surface-200-800 card-hover divide-surface-200-800 block sm:min-w-[42rem] max-w-md sm:max-w-2xl divide-y overflow-hidden cursor-pointer"
   onclick={() => (showTasks = !showTasks)}
   onkeydown={(e) => e.key === "Enter" && (showTasks = !showTasks)}
 >
