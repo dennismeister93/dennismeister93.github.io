@@ -4,7 +4,7 @@
   import Resume from "./Resume/Resume.svelte";
 </script>
 
-<main class="space-y-4 p-4 font-extrabold">
+<main class="space-y-4 p-4 font-extrabold h-full">
   {#if page.content === ABOUT_LITERAL}
     <About />
   {:else if page.content === RESUME_LITERAL}
