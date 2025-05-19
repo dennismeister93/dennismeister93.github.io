@@ -12,7 +12,7 @@
                     "C++",
                     "Docker",
                     "Kubernetes",
-                    "DevContainer",
+                    "DevContainers",
                     "VSCode",
                     "GitHub Actions"
                 ]
@@ -25,7 +25,7 @@
                 ]
             },
             {
-                "summary": "Designed and developed the ETAS Vehicle App Generator, an end-to-end solution leveraging generative AI to transform natural language prompts into vehicle applications. The system handles application generation, building, provisioning and real-time deployment on ETAS EDGE Middleware solution devices.",
+                "summary": "Designed and developed the ETAS Vehicle App Generator, an end-to-end solution leveraging generative AI to transform natural language prompts into vehicle applications. The system handles application generation, building, provisioning and real-time deployment on ETAS EDGE Middleware devices.",
                 "technologies": [
                     "TypeScript",
                     "React",
@@ -34,13 +34,13 @@
                 ]
             },
             {
-                "summary": "Developed a performance testing tool for the Eclipse Kuksa™ Databroker, a gRPC service written in Rust acting as a broker for vehicle data, optimizing data handling and throughput.",
+                "summary": "Created a performance testing tool for the Eclipse Kuksa™ Databroker, a gRPC service written in Rust that acts as a broker for vehicle data, optimizing throughput and data handling.",
                 "technologies": [
                     "Rust"
                 ]
             },
             {
-                "summary": "Designed and developed a VSCode extension for ETAS' automotive EDGE middleware, enabling CAN Bus to VSS signal mapping, gRPC service definitions, client API creation, and middleware debugging. Mentored the team to streamline workflows and ensure successful implementation.",
+                "summary": "Designed and developed a VSCode extension for ETAS EDGE Middleware, enabling CAN Bus to VSS signal mapping, gRPC service definitions, client API creation, and middleware debugging. Mentored the team to streamline workflows and ensure successful implementation.",
                 "technologies": [
                     "TypeScript",
                     "Svelte"
@@ -60,12 +60,11 @@
                     "TypeScript",
                     "Vue",
                     "AWS",
-                    "Cloudfoundry",
                     "Bitbucket"
                 ]
             },
             {
-                "summary": "Developed a backend for hazard spot warnings using map, navigation, and GPS data, enhancing safety alerts for users.",
+                "summary": "Created a backend for hazard spot warnings using map, navigation, and GPS data, enhancing safety alerts for users.",
                 "technologies": [
                     "TypeScript",
                     "Go",
@@ -75,10 +74,11 @@
                 ]
             },
             {
-                "summary": "Developed a vehicle- & fleet-management platform for the vehicle lifecycle and control unit devices, optimizing fleet management processes.",
+                "summary": "Developed a vehicle and fleet management platform for managing vehicle lifecycles and control unit devices, optimizing fleet operations.",
                 "technologies": [
                     "TypeScript",
                     "Go",
+                    "Python",
                     "Jenkins",
                     "GitHub Actions",
                     "Kubernetes",
@@ -104,7 +104,7 @@
                 ]
             },
             {
-                "summary": "Developed a user management and provisioning UI for the cloud-based platform, enabling self-service for users and cloud resource management.",
+                "summary": "Built a user management and provisioning UI for the cloud platform, enabling self-service for users and cloud resource management.",
                 "technologies": [
                     "TypeScript",
                     "React",
@@ -113,19 +113,11 @@
                 ]
             },
             {
-                "summary": "Set up and maintained production infrastructure for a cloud-based predictive maintenance tool, ensuring its stable operation.",
+                "summary": "Designed and maintained cloud-based production infrastructure and CI/CD pipelines for a predictive maintenance solution, ensuring stability and efficient deployment.",
                 "technologies": [
                     "Go",
-                    "Kubernetes",
-                    "GitLab CI"
-                ]
-            },
-            {
-                "summary": "Established a cloud-based, containerized web app with CI/CD pipelines, streamlining deployment and development workflows.",
-                "technologies": [
-                    "TypeScript",
                     "Angular",
-                    "Go",
+                    "Kubernetes",
                     "GitLab CI"
                 ]
             }
@@ -138,18 +130,15 @@
         "time": "Aug 2013 – Aug 2016",
         "tasks": [
             {
-                "summary": "Completed a comprehensive dual study program combining theoretical education in Software Engineering with hands-on industry experience, working in software development and DevOps.",
+                "summary": "Completed a dual study program combining theoretical education in Software Engineering with practical experience in software development, DevOps and agile methodologies.",
                 "technologies": []
             },
             {
-                "summary": "Gained expertise in Java, software architecture patterns and DevOps practices, while applying them to real-world projects during work phases.",
+                "summary": "Gained hands-on expertise in Java, architectural patterns, and DevOps practices, applying them across various projects at E.ON.",
                 "technologies": [
-                    "Java"
+                    "Java",
+                    "Spring"
                 ]
-            },
-            {
-                "summary": "Developed a strong foundation in system design, code optimization, and Agile methodologies, contributing to various software engineering projects.",
-                "technologies": []
             }
         ]
     },
