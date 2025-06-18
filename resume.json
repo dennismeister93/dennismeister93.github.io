@@ -82,6 +82,8 @@
                     "Jenkins",
                     "GitHub Actions",
                     "Kubernetes",
+                    "Kafka",
+                    "OAuth2",
                     "Azure"
                 ]
             }
@@ -94,7 +96,7 @@
         "time": "Aug 2016 – April 2019",
         "tasks": [
             {
-                "summary": "Developed a cloud-based development platform, improving efficiency, automation, and availability for application development.",
+                "summary": "Developed a microservice-based development platform, improving efficiency, automation, and availability for application development.",
                 "technologies": [
                     "Go",
                     "Azure",
@@ -104,7 +106,7 @@
                 ]
             },
             {
-                "summary": "Built a user management and provisioning UI for the cloud platform, enabling self-service for users and cloud resource management.",
+                "summary": "Built a user management and provisioning UI for the microservice platform, enabling self-service for users and cloud resource management.",
                 "technologies": [
                     "TypeScript",
                     "React",
@@ -134,10 +136,12 @@
                 "technologies": []
             },
             {
-                "summary": "Gained hands-on expertise in Java, architectural patterns, and DevOps practices, applying them across various projects at E.ON.",
+                "summary": "Supported the development of a microservice-based platform, gaining practical experience in Java Spring Boot, common architectural patterns and DevOps practices.",
                 "technologies": [
                     "Java",
-                    "Spring"
+                    "Spring",
+                    "Kafka",
+                    "OAuth2"
                 ]
             }
         ]
